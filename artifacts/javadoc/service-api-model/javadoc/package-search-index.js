@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"ru.protei.api.model"},{"l":"ru.protei.api.request"},{"l":"ru.protei.api.response"}]

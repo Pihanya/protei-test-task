@@ -1,0 +1,5 @@
+rootProject.name = 'user-service'
+include 'data-model'
+include 'rest-api'
+include 'service-api-model'
+

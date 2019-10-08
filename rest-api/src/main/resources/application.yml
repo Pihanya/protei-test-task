@@ -1,0 +1,39 @@
+spring.profiles.active:
+
+service:
+  online-status-timeout: 5m
+
+  service-user-cache:
+    expiration-time: 10m
+    size: 100_000
+
+  user-details-cache:
+    expiration-time: 20m
+    size: 100_000
+
+server:
+  servlet:
+    context-path: "/v1/api"
+  port: 8080
+
+# Spring
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url:
+    username:
+    password:
+    platform: postgresql
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+# Logging
+logging:
+  pattern.console: "%-5level %logger{36} - %msg%n"
+  level:
+    ru.protei: INFO
+    org.springframework: ERROR
+    root: ERROR
